@@ -40,10 +40,10 @@ function App() {
 
   return (
     <div>
-      <h4>Webln tutorial</h4>
-      <button onClick={loadRequestProvider}>Connect to provider</button>
-      <p>Connected to: {nodeInfo}</p>
-      <h4>Create invoice</h4>
+      <h4>Webln </h4>
+      <button onClick={loadRequestProvider}>Connect</button>
+      <p>Connecté à : {nodeInfo}</p>
+      <h4>lightning Invoice</h4>
       <form onSubmit={handleInvoice}>
         <input
           type="number"
@@ -51,11 +51,11 @@ function App() {
           value={amount}
           required
         />
-        <button>Create invoice</button>
+        <button>Créer une facture lightning</button>
       </form>
-      <h4>Pay invoice</h4>
-      <button onClick={handlePayment}>Pay invoice</button>
-      <h4>Sign message</h4>
+      <h4>Payé la facure lightning</h4>
+      <button onClick={handlePayment}>Payé</button>
+      <h4>Signé le message</h4>
       <form onSubmit={handleSignature}>
         <input
           type="string"
@@ -63,7 +63,7 @@ function App() {
           value={message}
           required
         />
-        <button>Sign message</button>
+        <button>Signé le message</button>
       </form>
       <button onClick={verifyMessage}>verify message</button>
     </div>

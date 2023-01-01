@@ -1,5 +1,6 @@
 {
-  "name": "webln-tutorial",
+  "name": "webln",
+  "author":"Block67",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
